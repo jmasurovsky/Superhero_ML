@@ -29,10 +29,13 @@ JavaScript's D3.js library will be used to create an interactive dashboard.
 
 To answer the first research question, classification model(s) will be used such as logistic regression, SVM, Naive Bayes, and/or decision trees. The target variables will be the "Alignment" field, which contains values of 'good' and 'bad' represented as '1' and '0'. Below is a sample output from a logistic regression performed on the data.
 
-![img_1]()
+![img_1](https://github.com/jmasurovsky/Superhero_ML/blob/main/Dataframe.png)
+
+Using clustering methods, such as K-means, will help explore similarities between all characters. Linear regression will be performed to explore how abilities of characters influence eachother.
+
 
 ## Database
-...set up postgresql, create connection to Python, and paste ERD...
+PostgreSQL database has been set up and will be used as storage for final-stage cleaned, analyzed, and outputted results from ML models. A connection to Python has been created in the 'superhero_cleaning' notebook (see data_cleaning branch).
 
 
 
