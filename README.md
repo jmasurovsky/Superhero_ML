@@ -27,9 +27,9 @@ JavaScript's D3.js library will be used to create an interactive dashboard.
 
 ## ML Model(s)
 
-To answer the first research question, classification model(s) will be used such as logistic regression, SVM, Naive Bayes, and/or decision trees. The target variables will be the "Alignment" field, which contains values of 'good' and 'bad' represented as '1' and '0'. Below is a sample output from a logistic regression performed on the data.
+To answer the first research question, classification model(s) will be used such as logistic regression, SVM, Naive Bayes, and/or decision trees. The target variables will be the "Alignment" field, which contains values of 'good' and 'bad' represented as '1' and '0'. Below is a sample testing data. Training data will be abilities, characteristics, and superpowers.
 
-![img_1](https://github.com/jmasurovsky/Superhero_ML/blob/main/Dataframe.png)
+![img_1](https://github.com/jmasurovsky/Superhero_ML/blob/main/Alignment.png)
 
 Using clustering methods, such as K-means, will help explore similarities between all characters. Linear regression will be performed to explore how abilities of characters influence eachother.
 
