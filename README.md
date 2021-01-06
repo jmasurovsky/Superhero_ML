@@ -38,4 +38,11 @@ Using clustering methods, such as K-means, will help explore similarities betwee
 PostgreSQL database has been set up and will be used as storage for final-stage cleaned, analyzed, and outputted results from ML models. A connection to Python has been created in the 'superhero_cleaning' notebook (see data_cleaning branch).
 
 
+## Data preprocessing
+
+Before running any machine learning algorithms, the data needed to be preprocessed. Alignment and Gender were converted to binary as 0 and 1. Dummy values were created from superpower, physical characterstics, and publisher fields. Superhero ability matrix stats were label encoded into bins using adaptive binning. Adaptive binning uses the IQR ranges as bin values.
+
+### Logistic Regression Classification
+
+The target variable is the 'Alignment' field. The data was split into ~80% training (400) and ~20% testing (117). 
 
