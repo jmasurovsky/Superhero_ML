@@ -47,6 +47,7 @@ Before running any machine learning algorithms, the data needed to be preprocess
 The target variable is the 'Alignment' field. The data was split into ~80% training (400) and ~20% testing (117). Results showed an accuracy score of ~75%. The confusion matrix and classifcation report of the results showed: 
 
 [[17 24]
+ 
  [10 79]]
  
                    precision    recall  f1-score   support
@@ -55,6 +56,6 @@ The target variable is the 'Alignment' field. The data was split into ~80% train
            1       0.77      0.89      0.82        89
 
     accuracy                           0.74       130
-   macro avg       0.70      0.65      0.66       130
-weighted avg       0.72      0.74      0.72       130
+    macro avg       0.70      0.65      0.66       130
+    weighted avg       0.72      0.74      0.72       130
 
