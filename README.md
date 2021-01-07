@@ -16,13 +16,13 @@ Research questions that will be explored in this project are:
 Pandas, Matplotlib, and Seaborn packages will be used to clean, explore, and visualize the data. Python will be used to conduct further analysis.
 
 ### Database Storage
-PostgreSQL will be used as database storage and will integrate with Python and possibly JavaScript for dashboard integration.
+PostgreSQL will be used as database storage and will integrate with Python.
 
 ### Machine Learning
 Python's ScikitLearn package will be used to perform machine learning methodologies. R studio will be used to perform multi-linear regressions.
 
 ### Dashboard
-JavaScript's D3.js library will be used to create an interactive dashboard.
+Tableau will be used to create an interactive dashboard.
 
 
 ## ML Model(s)
@@ -59,3 +59,9 @@ The target variable is the 'Alignment' field. The data was split into ~80% train
     macro avg       0.70      0.65      0.66       130
     weighted avg    0.72      0.74      0.72       130
 
+
+## Dashboard
+
+Still in development
+
+[Superheroes Dashboard](https://public.tableau.com/profile/jason.masurovsky#!/vizhome/SuperheroML/Prototype)
