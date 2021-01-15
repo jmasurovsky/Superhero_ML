@@ -64,4 +64,4 @@ The target variable is the 'Alignment' field. The data was split into ~80% train
 
 Still in development
 
-[Superheroes Dashboard](https://public.tableau.com/profile/jason.masurovsky#!/vizhome/SuperheroML/Prototype)
+[Superheroes Dashboard](https://public.tableau.com/profile/jason.masurovsky#!/vizhome/Superheroes_Villains_Dashboard/Prototype)
