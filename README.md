@@ -41,12 +41,40 @@ Multiple classification models will be run and comapared such as logistic regres
 
 ## Results
 
-Model data was split 75% training and 25% testing and with a random state = 1. Random forests n_estimators were set to 50. Results of random forest feature importance yielded a high importance for height, weight, and bmi accounted for 16% of the weight. I decided to remove these columns and run the models over again. Logistic regression showed an accuracy score of 73.1%, random forest classifier showed an accuracy score of 75.4%, decision tree showed an accuracy score of 66%, and svm showed an accuracy score of 64%. The table below displays results for accuracy, precision and recall scores. Random forests classifier came out strongest in comparison to the other model results. 
+Model data was split 75% training and 25% testing and with a random state = 1. Random forests n_estimators were set to 50. Results of random forest feature importance yielded a high importance for height, weight, and bmi accounted for 16% of the weight. I decided to remove these columns and run the models over again. Logistic regression showed an accuracy score of 73.1%, random forest classifier showed an accuracy score of 75.4%, decision tree showed an accuracy score of 66%, and svm showed an accuracy score of 64%. The table below displays results for accuracy, precision and recall scores. Random forests classifier came out strongest in comparison to the other model results with a precsion score of and a recall score of . 
 
 ![img_2](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/all_model_results.png)
 
 *Table 1. Accuracy, precision, and recall results for all models*
 
+Abilities such as intelligence, speed, strength, power, and combat were placed into separate dataframes and ran through random forests classifer. 
+
+#### Good
+
+ - Combat had an accuracy score of 70%, a precision score of 77%, a recall score of 89%, and an F1 score of 83%.
+ 
+ - Intelligence had an accuracy score of 74%, a precision score of 77%, a recall score of 89%, and an F1 score of 83%.
+ 
+ - Power had an accuracy score of 76%, a precision score of 78%, a recall score of 91%, and an F1 score of 84%.
+ 
+ - Speed had an accuracy score of 74%, a precision score of 77%, a recall score of 90%, and an F1 score of 83%.
+ 
+ - Strength had an accuracy score of 74%, a precision score of 77%, a recall score of 90%, and an F1 score of 83%.
+ 
+#### Evil
+
+ - Combat had an accuracy score of 70%, a precision score of 50%, a recall score of 23%, and an F1 score of 32%.
+ 
+ - Intelligence had an accuracy score of 74%, a precision score of 60%, a recall score of 38%, and an F1 score of 47%.
+ 
+ - Power had an accuracy score of 76%, a precision score of 67%, a recall score of 41%, and an F1 score of 51%.
+ 
+ - Speed had an accuracy score of 74%, a precision score of 61%, a recall score of 36%, and an F1 score of 45%.
+ 
+ - Strength had an accuracy score of 74%, a precision score of 61%, a recall score of 36%, and an F1 score of 45%.
+ 
+
+#### Evil
 
 From here, random forests classifier will be used to run models on individual abilities, with all other variables remaining unchanged. 
 
