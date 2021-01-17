@@ -13,13 +13,13 @@ Research questions that will be explored in this project are:
 ## Technologies Used
 
 ### Data Cleaning and Analysis
-Pandas, Matplotlib, and Seaborn packages will be used to clean, explore, and visualize the data. Python will be used to conduct further analysis.
+Python (pandas, matplotlib) and Tableau will be used to clean, explore, and visualize the data. Tableau will be used to conduct further analysis.
 
 ### Database Storage
-PostgreSQL will be used as database storage and will integrate with Python.
+To reduce the memory load on local computers, PostgreSQL is used as database storage for temporary tables (everything except original databases) that integrates with Python notebooks to import and export dataframes. 
 
 ### Machine Learning
-Python's ScikitLearn package will be used to perform machine learning methodologies. R studio will be used to perform multi-linear regressions.
+Python's ScikitLearn package will be used to perform machine learning methodologies.
 
 ### Dashboard
 Tableau will be used to create an interactive dashboard.
@@ -98,7 +98,7 @@ In the dashboard below...
 - See results of best suited model for predicting good or evil
      - Interactively filter predicted vs actual by a character's name
      
-- Explore each comicbook character with interactive elements from the analysis
+- Explore each comic book character with interactive elements from the analysis
 
 - Filter average abilities by publisher and count of characters by publisher
 
