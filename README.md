@@ -41,11 +41,15 @@ Multiple classification models will be run and comapared such as logistic regres
 
 ## Results
 
-Model data was split 75% training and 25% testing and with a random state = 1. Random forests n_estimators were set to 50. Results of random forest feature importance yielded a high importance for height, weight, and bmi accounted for 16% of the weight. I decided to remove these columns and run the models over again. Logistic regression showed an accuracy score of 73.1%, random forest classifier showed an accuracy score of 75.4%, decision tree showed an accuracy score of 66%, and svm showed an accuracy score of 64%. The table below displays results for accuracy, precision and recall scores. Random forests classifier came out strongest in comparison to the other model results with a precsion score of and a recall score of - . The confusion matrix below showed - .
+Model data was split 75% training and 25% testing and with a random state = 1. Random forests n_estimators were set to 50. Results of random forest feature importance yielded a high importance for height, weight, and bmi accounted for 16% of the weight. I decided to remove these columns and run the models over again. Logistic regression showed an accuracy score of 73.1%, random forest classifier showed an accuracy score of 75.4%, decision tree showed an accuracy score of 66%, and svm showed an accuracy score of 64%. The table below displays results for accuracy, precision and recall scores. Random forests classifier came out strongest in comparison to the other model results with a precsion score of and a recall score of - . Confusion matrix results from random forest showed 12 characters were correctly predicted as evil (True positive), while 5 were incorrectly predicted as evil when actually are good. 86 characters were correctly predicted as good (True negative), while 27 were incorrectly predicted as good when are actually evil. 
 
 ![img_2](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/all_model_results.png)
 
 *Table 1. Accuracy, precision, and recall results for all models*
+
+![img_3](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/rf_confusion_matrix.png)
+
+*Table 2. Confusion matrix for random forests results*
 
 Abilities such as intelligence, speed, strength, power, and combat were placed into separate dataframes and ran through random forests classifer.
 
@@ -75,13 +79,13 @@ Abilities such as intelligence, speed, strength, power, and combat were placed i
  
 Results above are reflected in the tables below.
 
-![img_3](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/good_ability_model.png)
+![img_4](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/good_ability_model.png)
 
-*Table 2. Random forests cllasifier results for good characters' individual abilities*
+*Table 3. Random forests cllasifier results for good characters' individual abilities*
 
-![img_4](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/evil_ability_model.png)
+![img_5](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/evil_ability_model.png)
 
-*Table 2. Random forests cllasifier results for evil characters' individual abilities*
+*Table 4. Random forests cllasifier results for evil characters' individual abilities*
 
 ## Summary/Conclusion
 
@@ -89,6 +93,13 @@ The analysis revealed there is a an imbalance in the dataset when classifying su
 
 ## Dashboard
 
-Still in development
+In the dashboard below...
 
-[Superheroes Dashboard](https://public.tableau.com/profile/jason.masurovsky#!/vizhome/Superheroes_Villains_Dashboard/Prototype)
+- See results of best suited model for predicting good or evil
+     - Interactively filter predicted vs actual by a character's name
+     
+- Explore each comicbook characters with interactive elements from the analysis
+
+- Filter average abilities by publisher and see the count of characters
+
+[Superheroes Dashboard](https://public.tableau.com/profile/jason.masurovsky#!/vizhome/Superheroes_Villains_Dashboard/Prototype2)
