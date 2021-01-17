@@ -102,4 +102,4 @@ In the dashboard below...
 
 - Filter average abilities by publisher and count of characters by publisher
 
-[Superheroes Dashboard](https://public.tableau.com/profile/jason.masurovsky#!/vizhome/Superheroes_Villains_Dashboard/Prototype2)
+[Superheroes Dashboard](https://public.tableau.com/profile/jason.masurovsky#!/vizhome/Superheroes_Villains_Dashboard/ComicbookDashboard)
