@@ -98,8 +98,8 @@ In the dashboard below...
 - See results of best suited model for predicting good or evil
      - Interactively filter predicted vs actual by a character's name
      
-- Explore each comicbook characters with interactive elements from the analysis
+- Explore each comicbook character with interactive elements from the analysis
 
-- Filter average abilities by publisher and see the count of characters
+- Filter average abilities by publisher and count of characters by publisher
 
 [Superheroes Dashboard](https://public.tableau.com/profile/jason.masurovsky#!/vizhome/Superheroes_Villains_Dashboard/Prototype2)
