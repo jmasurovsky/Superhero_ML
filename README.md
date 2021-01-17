@@ -24,28 +24,24 @@ Python's ScikitLearn package will be used to perform machine learning methodolog
 ### Dashboard
 Tableau will be used to create an interactive dashboard.
 
-
-## ML Model(s)
-
-To answer the first research question, classification model(s) will be used such as logistic regression, SVM, Naive Bayes, and/or decision trees. The target variables will be the "Alignment" field, which contains values of 'good' and 'bad' represented as '1' and '0'. Below is a sample testing data. Training data will be abilities, characteristics, and superpowers.
-
-![img_1](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/Alignment.png)
-
-Using clustering methods, such as K-means, will help explore similarities between all characters. Linear regression will be performed to explore how abilities of characters influence eachother.
-
-
 ## Database
 PostgreSQL database has been set up and will be used as storage for final-stage cleaned, analyzed, and outputted results from ML models. A connection to Python has been created in the 'superhero_cleaning' notebook.
 
 
 ## Data preprocessing
 
-Before running any machine learning algorithms, the data needed to be preprocessed. Alignment and Gender were converted to binary as 0 and 1. Dummy values were created from superpower, physical characterstics, and publisher fields. Superhero ability matrix stats were label encoded into bins using adaptive binning. Adaptive binning uses the IQR ranges as bin values.
--The target variable is the 'Alignment' field.
+Before running any machine learning algorithms, the data needed to be preprocessed. Alignment and Gender were converted to binary as 0 and 1. Dummy values were created from superpower, physical characterstics, and publisher fields. Superhero ability matrix stats were label encoded into bins using adaptive binning. Adaptive binning uses the IQR ranges as bin values. The target variable is the 'Alignment' field and 'Name' of characters have been set as the index to contextualize model results.
+
+## ML Model(s)
+
+Multiple classification models will be run and comapared such as logistic regression, SVM, random forests, and decision trees. One model will be chosen to decide which was best suitable to replicate for each character ability (intelligence, power, etc..) The target variables will be the "Alignment" field, which contains values of 'good' and 'bad' represented as '1' and '0'. Below is a sample testing data. Training data will be the gen labels of abilities, character characteristics, and superpowers.
+
+![img_1](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/Alignment.png)
+
 
 ## Results
 
-Multiple models were ran and compared accuracy scores to decide which was best suitable to replicate for each character ability (intelligence, power, etc..). Modles chosen were logistic regression, random forests, decision trees, and support vector machine. Model data was split 75% training and 25% testing and with a random state = 1. Results of random forest feature importance yielded a high importance for height, weight, and bmi accounted for 16% of the weight. I decided to remove these columns and run the models over again. Logistic regression showed an accuracy score of 73.1%, random forest classifier showed an accuracy score of 75.4%, decision tree showed an accuracy score of 66%, and svm showed an accuracy score of 64%. The table below displays results for accuracy, precision and recall scores. Random forests classifier came out strongest in comparison to the other model results. 
+Model data was split 75% training and 25% testing and with a random state = 1. Random forests n_estimators were set to 50. Results of random forest feature importance yielded a high importance for height, weight, and bmi accounted for 16% of the weight. I decided to remove these columns and run the models over again. Logistic regression showed an accuracy score of 73.1%, random forest classifier showed an accuracy score of 75.4%, decision tree showed an accuracy score of 66%, and svm showed an accuracy score of 64%. The table below displays results for accuracy, precision and recall scores. Random forests classifier came out strongest in comparison to the other model results. 
 
 ![img_2](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/all_model_results.png)
 
