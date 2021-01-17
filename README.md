@@ -47,7 +47,7 @@ Model data was split 75% training and 25% testing and with a random state = 1. R
 
 *Table 1. Accuracy, precision, and recall results for all models*
 
-Abilities such as intelligence, speed, strength, power, and combat were placed into separate dataframes and ran through random forests classifer. 
+Abilities such as intelligence, speed, strength, power, and combat were placed into separate dataframes and ran through random forests classifer.
 
 #### Good
 
@@ -73,10 +73,19 @@ Abilities such as intelligence, speed, strength, power, and combat were placed i
  
  - Strength had an accuracy score of 74%, a precision score of 61%, a recall score of 36%, and an F1 score of 45%.
  
+Results above are reflected in the tables below.
 
-#### Evil
+![img_3](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/.png)
 
-From here, random forests classifier will be used to run models on individual abilities, with all other variables remaining unchanged. 
+*Table 2. Random forests cllasifier results for good characters' individual abilities*
+
+![img_4](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/.png)
+
+*Table 2. Random forests cllasifier results for evil characters' individual abilities*
+
+## Summary/Conclusion
+
+The analysis revealed there is a an imbalance in the dataset when classifying superhero comic book characters as good or evil using ability levels, superpowers, and characteristics with over half the dataset being good characters. At the same time, about 70% of the dataset were men reiterating there has been a historical bias towards making male comic book characters. Running different classification algorithms showed that random forests was the best chosen model to use with a somewhat strong accuracy score of 75%. Analysis results showed comparing the average of individual character abilities raised a new question that evil characters were on average more likely to be intelligent and powerful. Running random forests on individual abilities, with all other variables remaining unchanged, for evil characters showed that intelligence and power had higher recall and F1 scores compared to other abilities. This supports the idea that intelligent and/or powerful, compared to other abilities, characters are more likely to be classified as evil. Abilities for good characters were evenely balanced across model results. Future work could incoporate performing k-means clustering analysis to find similarities regardless of a character's alignment, and increasing the character volume for the dataset. 
 
 ## Dashboard
 
