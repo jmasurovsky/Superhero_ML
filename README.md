@@ -52,6 +52,7 @@ Multiple models were ran and compared accuracy scores to decide which was best s
 *Table 1. Accuracy, precision, and recall results for all models*
 
 
+From here, random forests classifier will be used to run models on individual abilities, with all other variables remaining unchanged. 
 
 ## Dashboard
 
