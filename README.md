@@ -49,6 +49,8 @@ Multiple models were ran and compared accuracy scores to decide which was best s
 
 ![img_2](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/all_model_results.png)
 
+*Table 1. Accuracy, precision, and recall results for all models*
+
 
 
 ## Dashboard
