@@ -6,9 +6,9 @@ Comic books and superheroes from Marvel and DC publishers have been around since
 
 Research questions that will be explored in this project are:
 
-- Can we classify a superhero as good or evil based off their physical characteristics and abilities? Do we see a bias?
-- Can we cluster superheroes by their abilities to uncover similarities between good and evil characters?
-- Which superhero abilities have statistically significant influence on one another and by how much?
+- Can we classify a superhero as good or evil based off their physical characteristics and abilities? 
+- Assuming all other variables equal, can a character's alignment be better explained through the classification of an individual ability?
+     - Are intelligence, strength, power, combat, durability, or speed bias towards an alignment?
 
 ## Technologies Used
 
@@ -29,35 +29,26 @@ Tableau will be used to create an interactive dashboard.
 
 To answer the first research question, classification model(s) will be used such as logistic regression, SVM, Naive Bayes, and/or decision trees. The target variables will be the "Alignment" field, which contains values of 'good' and 'bad' represented as '1' and '0'. Below is a sample testing data. Training data will be abilities, characteristics, and superpowers.
 
-![img_1](https://github.com/jmasurovsky/Superhero_ML/blob/main/Alignment.png)
+![img_1](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/Alignment.png)
 
 Using clustering methods, such as K-means, will help explore similarities between all characters. Linear regression will be performed to explore how abilities of characters influence eachother.
 
 
 ## Database
-PostgreSQL database has been set up and will be used as storage for final-stage cleaned, analyzed, and outputted results from ML models. A connection to Python has been created in the 'superhero_cleaning' notebook (see data_cleaning branch).
+PostgreSQL database has been set up and will be used as storage for final-stage cleaned, analyzed, and outputted results from ML models. A connection to Python has been created in the 'superhero_cleaning' notebook.
 
 
 ## Data preprocessing
 
 Before running any machine learning algorithms, the data needed to be preprocessed. Alignment and Gender were converted to binary as 0 and 1. Dummy values were created from superpower, physical characterstics, and publisher fields. Superhero ability matrix stats were label encoded into bins using adaptive binning. Adaptive binning uses the IQR ranges as bin values.
+-The target variable is the 'Alignment' field.
 
-### Logistic Regression Classification
+## Results
 
-The target variable is the 'Alignment' field. The data was split into ~80% training (400) and ~20% testing (117). Results showed an accuracy score of ~75%. The confusion matrix and classifcation report of the results showed: 
+Multiple models were ran and compared accuracy scores to decide which was best suitable to replicate for each character ability (intelligence, power, etc..). Modles chosen were logistic regression, random forests, decision trees, and support vector machine. Model data was split 75% training and 25% testing and with a random state = 1. Results of random forest feature importance yielded a high importance for height, weight, and bmi accounted for 16% of the weight. I decided to remove these columns and run the models over again. Logistic regression showed an accuracy score of 73.1%, random forest classifier showed an accuracy score of 75.4%, decision tree showed an accuracy score of 66%, and svm showed an accuracy score of 64%. The table below displays results for accuracy, precision and recall scores. Random forests classifier came out strongest in comparison to the other model results. 
 
-     [[17 24]
- 
-     [10 79]]
- 
-                   precision    recall  f1-score   support
+![img_2](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/all_model_results.png)
 
-           0       0.63      0.41      0.50        41
-           1       0.77      0.89      0.82        89
-
-    accuracy                            0.74       130
-    macro avg       0.70      0.65      0.66       130
-    weighted avg    0.72      0.74      0.72       130
 
 
 ## Dashboard
