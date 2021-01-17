@@ -25,7 +25,7 @@ Python's ScikitLearn package will be used to perform machine learning methodolog
 Tableau will be used to create an interactive dashboard.
 
 ## Database
-PostgreSQL database has been set up and will be used as storage for final-stage cleaned, analyzed, and outputted results from ML models. A connection to Python has been created in the 'superhero_cleaning' notebook.
+PostgreSQL database has been set up and will be used as storage for final-stage cleaned, analyzed, and outputted results from ML models. A connection to Python has been created in the 'superhero_cleaning' notebook. A SQL join is used for the cleaned dataset and the results of the predicted vs actual on the "Name" field.
 
 
 ## Data preprocessing
