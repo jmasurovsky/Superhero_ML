@@ -75,11 +75,11 @@ Abilities such as intelligence, speed, strength, power, and combat were placed i
  
 Results above are reflected in the tables below.
 
-![img_3](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/.png)
+![img_3](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/good_ability_model.png.png)
 
 *Table 2. Random forests cllasifier results for good characters' individual abilities*
 
-![img_4](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/.png)
+![img_4](https://github.com/jmasurovsky/Superhero_ML/blob/main/images/evil_ability_model.png.png)
 
 *Table 2. Random forests cllasifier results for evil characters' individual abilities*
 
